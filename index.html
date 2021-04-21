@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+  <article>
+    <script src="script.js"></script>
+    <!-- Ni idea que hacen estos botones, parece que cuando se cambia de tamaño la ventana hace que se mantengan arriba -->
+    <ul>
+      <li class="bg-blue">
+        <button>APP</button>
+      </li>
+      <li class="bg-green">
+        <button>Chat</button>
+      </li>
+      <li class="bg-green">
+        <button>Calls</button>
+      </li>
+      <li class="bg-green">
+        <button>Video Calls<br>(one-to-one)</button>
+      </li>
+      <li class="bg-green">
+        <button>File Sharing</button>
+      </li>
+      <li class="bg-green">
+        <button>Group<br>video-meetings</button>
+      </li>
+      <li class="bg-green">
+        <button>Screen share</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Healthcare based</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Pricing</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Supported OS and platforms</button>
+      </li>
+      <li class="bg-red">
+        <button>Communications<br>protection (ENCRYPTION)</button>
+      </li>
+      <li class="bg-red">
+        <button>Extra security<br>layer</button>
+      </li>
+      <li class="bg-red">
+        <button>Security measures<br>in group meetings<br>(Admin-Pass-Invitation)</button>
+      </li>
+      <li class="bg-red">
+        <button>Security Standards Compliance</button>
+      </li>
+      <li class="bg-red">
+        <button>Privacy Policy</button>
+      </li>
+      <li class="bg-yellow">
+        <button>EEUU Most Popular on healthcare environment</button>
+      </li>
+    </ul>
+
+    <p><a href="#notas">&#9432; More info</a></p>
+    <div id="notas" class="modal">
+      <div class="modal-contenido">
+        <a href="#">Go back to the table</a>
+        <h2>Notes</h2>
+
+          <ol>
+            <li>The features of the apps, as well as their security and privacy details shown in the table, are conditional on the ease of access to this information.</li>
+            <br>
+            <li>If an app has 2 versions of its product and one of them is healthcare-based, the healthcare-based is analyzed.</li>
+            <br>
+            <li>The features of each health-based platform are gathered for the most complete version (e.g. If there are 3 pricing plans for an application, the features of the most complete one are selected).</li>
+            <br>
+            <li>"No *" in [Security standards] column means that we have not found anything. Obviously, no app says explicitly they are not compliant with security standards. However, all of them should be GDPR compliant to be legal. HIPAA and SOC2 (and others) are aditional security standards.</li>
+            <br>
+            <li>We only state GDPR in the [Security standards] column when there is an official document from the application stating GDPR compliance.</li>
+          </ol>
+  
+      </div>  
+    </div>
+
+    <table>
+      <col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
+      <thead>
+        <tr style="text-align: center;">
+          <th class="bg-blue">APP</th>
+          <th class="bg-green">Chat</th>
+          <th class="bg-green">Calls</th>
+          <th class="bg-green">Video Calls<br>(one-to-one)</th>
+          <th class="bg-green">File Sharing</th>
+          <th class="bg-green">Group<br>video-meetings</th>
+          <th class="bg-green">Screen share</th>
+          <th class="bg-yellow">Healthcare based</th>
+          <th class="bg-yellow">Pricing</th>
+          <th class="bg-yellow">Supported OS and platforms</th>
+          <th class="bg-red">Communications<br>protection (ENCRYPTION)</th>
+          <th class="bg-red">Extra security<br>layer</th>
+          <th class="bg-red">Security measures<br>in group meetings<br>(Admin-Pass-Invitation)</th>
+          <th class="bg-red">Security Standards Compliance</th>
+          <th class="bg-red">Privacy Policy</th>
+          <th class="bg-yellow">EEUU Most Popular on healthcare environment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="17" class="sep">Mostly Known applications</td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.messenger.com/" target="_blank">Facebook messenger</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 50 users)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free</td>
+          <td>Windows, MacOs, iOS, Android</td>
+          <td>E2EE</td>
+          <td>2-step verification (2FA)</td>
+          <td>Invitation<br>Admin control (Messenger Rooms)</td>
+          <td>SOC2<br>GDPR</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://support.apple.com/en-us/HT208176" target="_blank">FaceTime</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 32 u.)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free</td>
+          <td>MacOs. iOs</td>
+          <td>E2EE</td>
+          <td>2FA<br>Face ID and iPhone security</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span> *</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://duo.google.com/about/" target="_blank">Google Duo</a></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 12 u.)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free</td>
+          <td>Movil based: Android, iOs, Web</td>
+          <td>E2EE</td>
+          <td>2FA<br>Google Account security</td>
+          <td>Invitation and user block option</td>
+          <td>HIPAA<br>GDPR<br>BAA</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://workspace.google.com/industries/healthcare/" title="healthcare-based" target="_blank">Google Hangouts</a><br>(aka Meet or Workspace)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 10 u.)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Free</td>
+          <td>Android, iOs, Web</td>
+          <td>IETF, SRTP and DTLS client-Server</td>
+          <td>2FA<br>Advanced protection program (APP)<br>SSO and Google's MFA</td>
+          <td>Invitation,<br>admin control<br>PIN</td>
+          <td>HIPAA<br>HITRUST<br>SOC2<br>GDPR</td>
+          <td>Privacy Statement</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://meet.jit.si/" target="_blank">Jitsi Meet</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(without limit)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>3 versions: Free, 8USD month and Enterprise</td>
+          <td>Windows, Linux, MacOs, iOS, Android</td>
+          <td>E2EE<br>DTLS-SRTP</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Password<br>Admin control (every user is a moderator)</td>
+          <td><span class="cross">&#10008;</span> *</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://line.me/en/" target="_blank">Line</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 200 u. )</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span> <br> No (only on Geater Tokyo Area)</td>
+          <td>Free</td>
+          <td>Windows, MacOs, iOS, Android</td>
+          <td>E2EE</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Invitation</td>
+          <td><span class="cross">&#10008;</span> *</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://signal.org/" target="_blank">Signal</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span> <br>(only chat without user limit)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free (open to donatives)</td>
+          <td>Windows, Linux, MacOs, iOS, Android</td>
+          <td>E2EE</td>
+          <td>Screen Lock</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.skype.com/en/business/" target="_blank">Skype for business</a><br>(part of Office 365; formerly Microsoft Lync)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 50 u. )</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>2 plans: business essentials 5$/user month, business premium 12$/user</td>
+          <td>Windows, Linux, MacOs, iOS, Android</td>
+          <td>EE2E (private conversation)</td>
+          <td>2FA</td>
+          <td>Invitation<br>Admin control</td>
+          <td>GDPR<br>HIPAA (E3 E5 versions)<br>CCPA</td>
+          <td>Privacy Statement</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://telegram.org/" target="_blank">Telegram</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span> <br>(only chat without user limit)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free</td>
+          <td>Windows, Linux, MacOs, iOS, Android</td>
+          <td>E2EE (secret chat)</td>
+          <td>2FA<br>block code, secret chats and active sessions</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>GDPR</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.wechat.com/" target="_blank">WeChat</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 9 u. and 500 in chat)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>2 plans: Free public account and 99$ year official account</td>
+          <td>Windows, Web, MacOs, iOS, Android</td>
+          <td>TLS client-Server</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Legal basis EEA (European Economic Area)</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 8 u. and 256 in chat)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Free</td>
+          <td>Windows, Web, MacOs, iOS, Android</td>
+          <td>E2EE</td>
+          <td>2FA</td>
+          <td>Invitation</td>
+          <td>GDPR - EEA</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://zoom.us/healthcare" title="Healthcare-based" target="_blank">Zoom</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 100 u. on paid version)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Free or for health-based Zoom: 12$/month/license or 20$</td>
+          <td>Windows, Linux, MacOs, iOS, Android</td>
+          <td>E2EE<br>DTLS</td>
+          <td>2FA<br>SSO</td>
+          <td>Invitation<br>Password<br>Admin control</td>
+          <td>HIPAA - BAA<br>PHIPA/PIPEDA<br> SOC2</td>
+          <td>Privacy Statement</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.microsoft.com/en-us/microsoft-teams/healthcare-solutions" title="Healthcare-based" target="_blank">Teams</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 200-20 u. )</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Free and from $5.00 user/month to 20$ depending on plan chosen</td>
+          <td>Windows, Linux, MacOs, iOS, Android, Web</td>
+          <td>E2EE</td>
+          <td>2FA</td>
+          <td>Invitation<br>Password<br>Admin control</td>
+          <td>HIPAA<br>HITECH<br>SOC2<br>HITRUST<br>GDPR</td>
+          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td colspan="17" class="sep">Alternative applications: Specifically healtcare based</td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.coviu.com/en-us/" title="Healthcare-based" target="_blank">Coviu</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(up to 6 in clinic licence)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>3 plans: starter, professional and clinic ($15, $30, $42), discount per year billing</td>
+          <td>Web</td>
+          <td>E2EE<br>TLS 1.2, ECDHE_RSA with P-256 and AES_128_GCM.<br>Coviu call, data, video and audio: DTLS-SRTP</td>
+          <td>Azure SSO<br>ADFS SSO<br>Firewall and proxy settings<br>API key</td>
+          <td>Invitation<br>Waiting Area<br>Meeting dministrator managment<br>Security groups (SAML)</td>
+          <td>HIPAA</td>
+          <td>Privacy policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://doxy.me/features" title="Healthcare-based" target="_blank">Doxy.me</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>From Free to 42 $/month per provider</td>
+          <td>Web  browser based</td>
+          <td>E2EE</td>
+          <td>SSO</td>
+          <td>Room passcode, access control<br>Invitation to meeting through email</td>
+          <td>HIPAA<br>PHIPA/PIPEDA<br>HITECH<br>GDPR<br>BAA requirements</td>
+          <td>Privacy Policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.theraplatform.com/" title="Healthcare-based" target="_blank">Thera platform</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(from Pro edition onwards)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>3 plans: basic, pro and pro plus ($29, $39, $59), discount per year billing</td>
+          <td>Web</td>
+          <td>Video connection encryption. <br>Website connection encryption 2048-bit SSL 256-bit.<br>Data transfer encryption. <br>Encrypted database backups. <br>Server drives encrypted AES-256 algorithm</td>
+          <td>SS0<br>(from Pro edition onwards)</td>
+          <td>Waiting room</td>
+          <td>HIPAA with BAA</td>
+          <td>Privacy statement</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="http://www.polycom.com/collaboration-solutions/solutions-by-industry/healthcare.html" title="Healthcare-based" target="_blank">Poly</a><br>(ZOOM based app)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 100 u.  and 100 on paid version)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>HWaaS</td>
+          <td>Windows, Mac, Android, iOS</td>
+          <td>AES-256 encryption<br>Simple Certificate Enrollment Protocol<br>(SCEP)</td>
+          <td>Remote logging with support for TLS and local account. <br>Also login port lockout</td>
+          <td>Authenticated access to admin menus, web interface and APIs and security profiles</td>
+          <td>GDPR<br>HIPAA</td>
+          <td>EULA</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://meetrix.io/solutions/telemedicine/" title="Healthcare-based" target="_blank">Meetrix.io</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 500 users)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Web</td>
+          <td>E2EE<br>DTLS-SRTP <br>(Jitsi based)</td>
+          <td><span class="cross">&#10008;</span> (Jitsi based)</td>
+          <td>Password<br>Admin control (every user is a moderator) (Jitsi based)</td>
+          <td>HIPAA</td>
+          <td>Privacy policy</td>
+          <td><span class="cross">&#10008;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.vidyo.com/video-conferencing-solutions/industry/telehealth" title="Healthcare-based" target="_blank">Vidyo Health</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Windows, MacOs, iOS, Android, Web</td>
+          <td>TLS, SRTP, H.235, and AES 128-bit encryption</td>
+          <td></td>
+          <td></td>
+          <td>HIPAA</td>
+          <td>Privacy policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://medisprout.com/" title="Healthcare-based" target="_blank">V2MD by Medisprout</a></td>
+          <td><span class="tick">&#10004;</span><br>(visit reminders)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>$4 per virtual visit</td>
+          <td>Apple iOS, Android</td>
+          <td>Secure Socket Layer (SSL) technology</td>
+          <td></td>
+          <td></td>
+          <td>HIPAA</td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.cisco.com/c/en/us/products/unified-communications/jabber/index.html" target="_blank">Cisco Jabber</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>On-device: FREE<br>Cloud 60$ per licence</td>
+          <td>Windows, Mac, Android, iOS</td>
+          <td></td>
+          <td></td>
+          <td>Invitation</td>
+          <td><span class="cross">&#10008;</span> *</td>
+          <td>Cisco-wide Privacy Policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.univago.com/" target="_blank">Univago</a></td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(up to 30)</td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Contact Sales</td>
+          <td>Web</td>
+          <td>SSL/TLS, DTLS (media)TLS, SRTP/AESSSL/TLS, DTLS (media)TLS (SIP), SRTP/AES (media)</td>
+          <td></td>
+          <td>unique meeting IDs, PIN codes, encryption, lock meetings</td>
+          <td>HIPAA</td>
+          <td>Privacy policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.medweb.com/" title="Healthcare-based" target="_blank">Medweb</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Windows, Android, iOS</td>
+          <td>Secure Socket Layer (SSL)</td>
+          <td></td>
+          <td></td>
+          <td>HIPAA</td>
+          <td>Privacy policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.intouchhealth.com/" title="Healthcare-based" target="_blank">In Touch Health</a><br>(Platform -> Solo)</td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>SaaS: web, desktop, mobile devices</td>
+          <td></td>
+          <td>SSO<br>user acces control</td>
+          <td></td>
+          <td>HITRUST CSF<br>HIPAA<br>AdvaMed Certified</td>
+          <td>Privacy Policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.globalmed.com/" title="Healthcare-based" target="_blank">GlobalMed</a><br>(eNcounter®)</td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td></td>
+          <td>Secure Socket Layer (SSL)</td>
+          <td></td>
+          <td></td>
+          <td>HIPAA<br>FICSMA<br>HITRUST</td>
+          <td>Privacy Policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="http://www.sbrhealth.com/" title="Healthcare-based" target="_blank">SBR Health/Vidyo</a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>HIPAA<br>COPPA (Children Online Privacy Protection Act)</td>
+          <td>Privacy Policy</td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+ </html> 

@@ -1,0 +1,167 @@
+/* DIRTY Responsive pricing table CSS */
+
+/* 
+- make mobile switch sticky
+*/
+:root {
+  --blue-google:#4285f4;
+  --red-google:#DB4437;
+  --yellow-google:#F4B400;
+  --green-google:#0F9058;
+}
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+     outline: 0;
+  }
+  body { 
+    font-family:'Product Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:14px;
+    padding:14px;
+  }
+  article {
+    width:100%;
+    /*max-width:1000px;*/ /*afecta al ancho de la tabla*/
+    margin:0 auto;
+    height:1000px;
+    position:relative;
+  }
+  ul {
+    display:flex;
+    top:0px;
+    z-index:10;
+    padding-bottom:14px;
+  }
+  li {
+    list-style:none;
+    flex:1;
+  }
+  li:last-child {
+    border-right:1px solid #DDD;
+  }
+  button {
+    width:100%;
+    border: 1px solid #DDD;
+    border-right:0;
+    border-top:0;
+    padding: 10px;
+    background:#FFF;
+    font-size:14px;
+    font-weight:bold;
+    height:60px;
+    color:#999
+  }
+
+  li.active button {
+    background:#F5F5F5;
+    color:#000;
+  }
+
+  /*para los links de las apps*/
+  a.app-name:link, a.app-name:visited {
+    text-decoration: none;
+  }
+  a.app-name:hover, a.app-name:active {
+    color: var(--yellow-google);
+    text-decoration: underline;  
+  }
+  table { border-collapse:collapse; table-layout:auto; width:100%; }
+  /*He cambiado de fixed a auto para que la primera columna se hiciera más estrecha*/
+  th { background:#F5F5F5; display:none; }
+  td, th {
+    height:53px
+  }
+  td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+  td,th { border-left:3px solid #FFF;}
+  td,th {
+    text-align:left;
+  }
+  td+td, th+th {
+    text-align:center;
+    display:none;
+  }
+  td.default {
+    display:table-cell;
+  }
+  .bg-green {
+    border-top:5px solid #0F9058;
+  }
+  .bg-blue {
+    border-top:5px solid #4285f4;
+  }
+  .bg-yellow {
+    border-top:5px solid #F4B400;
+  }
+  .bg-red {
+    border-top:5px solid #DB4437;
+  }
+  .sep {
+    background:#F5F5F5;
+    font-weight:bold;
+  }
+  .sep:hover {
+    background:#4285f4;
+    color:#FFF;
+  }
+  .app-name { font-size:16px; font-weight:bold;color:#000; }
+  .txt-l { font-size:28px; font-weight:bold; }
+  .txt-top { position:relative; top:-9px; left:-2px; }
+  .tick { font-size:25px; color:#0F9058; }
+  .cross { font-size:25px; color:#DB4437; }
+  .hide {
+    border:0;
+    background:none;
+  }
+
+  /*Clases para alternancia de estilo entre filas*/
+  /*The background of rows (TR) is drawn in front of the background of columns (COL)*/
+  col:first-child {background: #4285f4}
+
+  col:nth-child(8){background: #f4b3008c}
+  col:nth-child(9) {background: #f4b3008c}
+  col:nth-child(10) {background: #f4b3008c}
+
+  tr:nth-child(even) {background: rgba(186, 209, 245, 0.1)}
+  tr:nth-child(odd) {background: rgb(245, 244, 244, 0.1)}
+
+  /*Clases para ventana modal de las anotaciones*/
+  .modal-contenido{
+    background-color:rgb(236, 184, 115);
+    font-size: large;
+    width:80%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #notas:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  
+  @media (min-width: 640px) {
+    ul {
+      display:none;
+    }
+    td,th {
+      display:table-cell !important;
+    }
+    td,th {
+      width: 330px;
+    
+    }
+    td+td, th+th {
+      width: auto;
+    }
+  }
