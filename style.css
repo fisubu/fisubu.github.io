@@ -15,11 +15,21 @@
     margin:0;
      outline: 0;
   }
+
   body { 
     font-family:'Product Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size:14px;
     padding:14px;
   }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
   article {
     width:100%;
     /*max-width:1000px;*/ /*afecta al ancho de la tabla*/
