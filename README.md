@@ -7,4 +7,4 @@ We focused on the more general applications as well as those applications more o
 
 ### Directed by: Esther Cubo
 
-## Note: the information was gathered on 12th of April 2021. The cells of the column without information represents that we were unable to confirm the functionality through the web.
+Note: the information was gathered on 12th of April 2021. The cells of the column without information represents that we were unable to confirm the functionality through the web.
