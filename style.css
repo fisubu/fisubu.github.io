@@ -21,6 +21,15 @@
     font-size:14px;
     padding:14px;
   }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
   article {
     width:100%;
     /*max-width:1000px;*/ /*afecta al ancho de la tabla*/
@@ -57,14 +66,6 @@
   li.active button {
     background:#F5F5F5;
     color:#000;
-  }
-
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
   }
 
   /*para los links de las apps*/
