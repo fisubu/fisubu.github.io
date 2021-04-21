@@ -6,7 +6,7 @@
 
   <article>
     <script src="script.js"></script>
-    <!-- Ni idea que hacen estos botones, parece que cuando se cambia de tamaño la ventana hace que se mantengan arriba -->
+    <!-- botones con js behaviour-->
     <ul>
       <li class="bg-blue">
         <button>APP</button>
@@ -71,7 +71,7 @@
             <br>
             <li>The features of each health-based platform are gathered for the most complete version (e.g. If there are 3 pricing plans for an application, the features of the most complete one are selected).</li>
             <br>
-            <li>"No *" in [Security standards] column means that we have not found anything. Obviously, no app says explicitly they are not compliant with security standards. However, all of them should be GDPR compliant to be legal. HIPAA and SOC2 (and others) are aditional security standards.</li>
+            <li><span class="cross">&#10008;</span>* in [Security standards] column means that we have not found anything. Obviously, no app says explicitly they are not compliant with security standards. However, all of them should be GDPR compliant to be legal. HIPAA and SOC2 (and others) are aditional security standards.</li>
             <br>
             <li>We only state GDPR in the [Security standards] column when there is an official document from the application stating GDPR compliance.</li>
           </ol>
@@ -118,9 +118,11 @@
           <td>Windows, MacOs, iOS, Android</td>
           <td>E2EE</td>
           <td>2-step verification (2FA)</td>
-          <td>Invitation,<br>Admin control (Messenger Rooms)</td>
-          <td>SOC2,<br>GDPR</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://about.fb.com/news/2020/04/privacy-matters-messenger-rooms/" target="_blank">Invitation,<br>Admin control (Messenger Rooms)</a></td>
+          <td><a class="cell-link" href="https://developers.facebook.com/products/messenger/security/" target="_blank">SOC2,</a>
+              <br>
+              <a class="cell-link" href="https://www.facebook.com/business/gdpr" target="_blank">GDPR</a></td>
+          <td><a class="cell-link" href="https://www.facebook.com/about/privacy" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -137,8 +139,8 @@
           <td>E2EE</td>
           <td>2FA,<br>Face ID and iPhone security</td>
           <td><span class="cross">&#10008;</span></td>
-          <td><span class="cross">&#10008;</span> *</td>
-          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><a class="cell-link" href="https://support.apple.com/en-us/HT209110" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -154,9 +156,9 @@
           <td>Movil based: Android, iOs, Web</td>
           <td>E2EE</td>
           <td>2FA,<br>Google Account security</td>
-          <td>Invitation and user block option</td>
-          <td>HIPAA,<br>GDPR,<br>BAA</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://support.google.com/duo/answer/7538935?co=GENIE.Platform%3DAndroid&amp;hl=en" target="_blank">Invitation and user block option</a></td>
+          <td><a class="cell-link" href="https://support.google.com/a/answer/3407054" target="_blank">HIPAA - BAA,<br>GDPR</a></td>
+          <td><a class="cell-link" href="https://policies.google.com/privacy" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -170,11 +172,11 @@
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
           <td>Android, iOs, Web</td>
-          <td>IETF, SRTP and DTLS client-Server</td>
-          <td>2FA<br>Advanced protection program (APP)<br>SSO and Google's MFA</td>
-          <td>Invitation,<br>admin control<br>PIN</td>
-          <td>HIPAA<br>HITRUST<br>SOC2<br>GDPR</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://support.google.com/a/answer/7582940?hl=en#zippy=%2Cencryption" target="_blank">IETF, SRTP and DTLS client-Server</a></td>
+          <td><a class="cell-link" href="https://support.google.com/a/answer/7582940?hl=en#zippy=%2Csecure-deployment-access-controls" target="_blank">2FA<br>Advanced protection program (APP)<br>SSO and Google's MFA</a></td>
+          <td><a class="cell-link" href="https://support.google.com/a/answer/7582940?hl=en#zippy=%2Canti-abuse-measures" target="_blank">Invitation,<br>admin control<br>PIN</a></td>
+          <td><a class="cell-link" href="https://support.google.com/a/answer/7582940?hl=en#zippy=%2Cprivacy-compliance" target="_blank">HIPAA<br>HITRUST<br>SOC2<br>GDPR</a></td>
+          <td><a class="cell-link" href="https://policies.google.com/privacy" target="_blank">Privacy Statement</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -188,11 +190,11 @@
           <td><span class="cross">&#10008;</span></td>
           <td>3 versions: Free, 8$ month and Enterprise</td>
           <td>Windows, Linux, MacOs, iOS, Android</td>
-          <td>E2EE<br>DTLS-SRTP</td>
+          <td><a class="cell-link" href="https://jitsi.org/blog/e2ee/" target="_blank">E2EE<br>DTLS-SRTP</a></td>
           <td><span class="cross">&#10008;</span></td>
-          <td>Password<br>Admin control (every user is a moderator)</td>
-          <td><span class="cross">&#10008;</span> *</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://jitsi.org/security/" target="_blank">Password<br>Admin control (every user is a moderator)</a></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><a class="cell-link" href="https://jitsi.org/meet-jit-si-privacy/" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -209,8 +211,8 @@
           <td>E2EE</td>
           <td><span class="cross">&#10008;</span></td>
           <td>Invitation</td>
-          <td><span class="cross">&#10008;</span> *</td>
-          <td>Privacy Statement</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><a class="cell-link" href="https://help.line.me/line/android/pc" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -224,11 +226,11 @@
           <td><span class="cross">&#10008;</span></td>
           <td>Free (open to donatives)</td>
           <td>Windows, Linux, MacOs, iOS, Android</td>
-          <td>E2EE</td>
+          <td><a class="cell-link" href="https://signal.org/blog/signal-profiles-beta/" target="_blank">E2EE</a></td>
           <td>Screen Lock</td>
           <td><span class="cross">&#10008;</span></td>
-          <td><span class="cross">&#10008;</span></td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://foundation.mozilla.org/en/privacynotincluded/signal/" target="_blank"><span class="cross">&#10008;</span></a></td>
+          <td><a class="cell-link" href="https://signal.org/legal/#privacy-policy" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -245,8 +247,8 @@
           <td>EE2E (private conversation)</td>
           <td>2FA</td>
           <td>Invitation,<br>Admin control</td>
-          <td>GDPR,<br>HIPAA (E3 E5 versions)<br>,CCPA</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://docs.microsoft.com/en-us/compliance/regulatory/offering-home" target="_blank">GDPR, HIPAA, HITRUST, HITECH, CCPA ...</a></td>
+          <td><a class="cell-link" href="https://privacy.microsoft.com/privacystatement" target="_blank">Privacy Statement</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -263,8 +265,8 @@
           <td>E2EE (secret chat)</td>
           <td>2FA,<br>block code, secret chats and active sessions</td>
           <td><span class="cross">&#10008;</span></td>
-          <td>GDPR</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://telegram.org/faq?setln=en#q-what-about-gdpr" target="_blank">GDPR</a></td>
+          <td><a class="cell-link" href="https://telegram.org/privacy" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -281,8 +283,8 @@
           <td>TLS client-Server</td>
           <td><span class="cross">&#10008;</span></td>
           <td><span class="cross">&#10008;</span></td>
-          <td>Legal basis EEA (European Economic Area)</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://www.wechat.com/en/privacy_policy.html" target="_blank">Legal basis EEA (European Economic Area)</a></td>
+          <td><a class="cell-link" href="https://www.wechat.com/en/privacy_policy.html" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -299,8 +301,8 @@
           <td>E2EE</td>
           <td>2FA</td>
           <td>Invitation</td>
-          <td>GDPR - EEA</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://www.whatsapp.com/legal/terms-of-service-eea" target="_blank">GDPR, EEA</a></td>
+          <td><a class="cell-link" href="https://www.whatsapp.com/legal/updates/privacy-policy-eea/?lang=en" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -317,8 +319,8 @@
           <td>E2EE,<br>DTLS</td>
           <td>2FA,<br>SSO</td>
           <td>Invitation,<br>Password,<br>Admin control</td>
-          <td>HIPAA - BAA,<br>PHIPA/PIPEDA,<br> SOC2</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://zoom.us/docs/doc/Zoom-hipaa.pdf" target="_blank">HIPAA - BAA,<br>PHIPA/PIPEDA,<br>SOC2</a></td>
+          <td><a class="cell-link" href="https://zoom.us/en-us/privacy.html" target="_blank">Privacy Statement</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -335,12 +337,12 @@
           <td>E2EE</td>
           <td>2FA</td>
           <td>Invitation,<br>Password,<br>Admin control</td>
-          <td>HIPAA,<br>HITECH,<br>SOC2,<br>HITRUST,<br>GDPR</td>
-          <td>Privacy Statement</td>
+          <td><a class="cell-link" href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/HIPAA-Compliance-Microsoft-Office-365-and-Microsoft-Teams.pdf" target="_blank">HIPAA,<br>HITECH,<br>SOC2,<br>HITRUST,<br>GDPR</a></td>
+          <td><a class="cell-link" href="https://privacy.microsoft.com/en-gb/privacystatement" target="_blank">Privacy Statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
-          <td colspan="17" class="sep">Alternative applications: Specifically healtcare based</td>
+          <td colspan="100%" class="sep">Alternative applications: Specifically healtcare based</td>
         </tr>
         <tr>
           <td><a class="app-name" href="https://www.coviu.com/en-us/" title="Healthcare-based" target="_blank">Coviu</a></td>
@@ -353,11 +355,16 @@
           <td><span class="tick">&#10004;</span></td>
           <td>3 plans: starter, professional and clinic ($15, $30, $42), discount per year billing</td>
           <td>Web</td>
-          <td>E2EE,<br>TLS 1.2, ECDHE_RSA with P-256 and AES_128_GCM.<br>Coviu call, data, video and audio: DTLS-SRTP</td>
-          <td>Azure SSO,<br>ADFS SSO,<br>Firewall and proxy settings,<br>API key</td>
+          <td>
+            <a class="cell-link" href="https://help.coviu.com/knowledge/privacy-security-of-data-1" target="_blank">E2EE,
+              <br>TLS 1.2, ECDHE_RSA with P-256 and AES_128_GCM.
+              <br>Coviu call, data, video and audio: DTLS-SRTP</a></td>
+          <td><a class="cell-link" href="https://help.coviu.com/knowledge/kb-search-results?term=SSO" target="_blank">Azure SSO,<br>ADFS SSO,<br></a>
+            <a class="cell-link" href="https://help.coviu.com/knowledge/kb-search-results?term=API+key" target="_blank">Firewall and proxy settings,<br>API key</a>
+          </td>
           <td>Invitation,<br>Waiting Area,<br>Meeting dministrator managment,<br>Security groups (SAML)</td>
-          <td>HIPAA</td>
-          <td>Privacy policy</td>
+          <td><a class="cell-link" href="https://help.coviu.com/knowledge/hipaa-compliance" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.coviu.com/en-au/privacy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -371,11 +378,11 @@
           <td><span class="tick">&#10004;</span></td>
           <td>From Free to 42 $/month per provider</td>
           <td>Web  browser based</td>
-          <td>E2EE</td>
-          <td>SSO</td>
+          <td><a class="cell-link" href="https://help.doxy.me/en/articles/95911-is-doxy-me-secure" target="_blank">E2EE, TLS, AES 128 with SHA256</a></td>
+          <td><a class="cell-link" href="https://doxy.me/en/eu-policy/" target="_blank">SSO</a></td>
           <td>Room passcode, access control<br>Invitation to meeting through email</td>
-          <td>HIPAA,<br>PHIPA/PIPEDA,<br>HITECH,<br>GDPR,<br>BAA requirements</td>
-          <td>Privacy Policy</td>
+          <td><a class="cell-link" href="https://help.doxy.me/en/collections/1402712-legal-privacy-and-security" target="_blank">HIPAA - BAA,<br>PHIPA/PIPEDA,<br>HITECH,<br>GDPR</a></td>
+          <td><a class="cell-link" href="https://doxy.me/en/privacy-policy/" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -389,11 +396,11 @@
           <td><span class="tick">&#10004;</span></td>
           <td>3 plans: basic, pro and pro plus ($29, $39, $59), discount per year billing</td>
           <td>Web</td>
-          <td>Video connection encryption. <br>Website connection encryption 2048-bit SSL 256-bit.<br>Data transfer encryption. <br>Encrypted database backups. <br>Server drives encrypted AES-256 algorithm</td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/features/security" target="_blank">Video encryption. <br>Website encryption 2048-bit SSL 256-bit.<br>Data transfer encryption. <br>Encrypted database backups. <br>Server encrypted AES-256 algorithm</a></td>
           <td>SS0<br>(from Pro edition onwards)</td>
           <td>Waiting room</td>
-          <td>HIPAA with BAA</td>
-          <td>Privacy statement</td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/features/hipaa-compliant-video-conferencing" target="_blank">HIPAA - BAA</a></td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/about/privacy" target="_blank">Privacy statement</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -407,11 +414,14 @@
           <td><span class="tick">&#10004;</span></td>
           <td>HWaaS</td>
           <td>Windows, Mac, Android, iOS</td>
-          <td>AES-256 encryption<br>Simple Certificate Enrollment Protocol<br>(SCEP)</td>
+          <td><a class="cell-link" href="https://www.poly.com/content/dam/www/products/video/packaged/telehealt-station/doc/926143_Poly_Telehealth_Station_Data_Sheet_18DEC20_HR.pdf" target="_blank">AES-256 encryption<br>Simple Certificate Enrollment Protocol<br>(SCEP)</a></td>
           <td>Remote logging with support for TLS and local account. <br>Also login port lockout</td>
           <td>Authenticated access to admin menus, web interface and APIs and security profiles</td>
-          <td>GDPR,<br>HIPAA</td>
-          <td>EULA</td>
+          <td><a class="cell-link" href="https://www.poly.com/us/en/legal/privacy/privacy-policy" target="_blank">GDPR,<br>EEA,</a>
+            <a class="cell-link" href="https://support.polycom.com/content/dam/polycom-support/products/uc-infrastructure-support/security-firewall-traversal/user/en/hipaa-security-document.pdf" target="_blank">HIPPA</a>
+          </td>
+          <td><a class="cell-link" href="https://support.polycom.com/content/dam/polycom-support/global/agreements/polycom-end-user-license-agmt-all-products.pdf" target="_blank">EULA,</a> 
+            <a class="cell-link" href="https://www.poly.com/us/en/legal/privacy/privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -428,8 +438,8 @@
           <td>E2EE<br>DTLS-SRTP</td>
           <td><span class="cross">&#10008;</span></td>
           <td>Password,<br>Admin control (every user is a moderator)</td>
-          <td>HIPAA</td>
-          <td>Privacy policy</td>
+          <td><a class="cell-link" href="https://meetrix.io/solutions/telemedicine/" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://meetrix.io/privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="cross">&#10008;</span></td>
         </tr>
         <tr>
@@ -446,8 +456,8 @@
           <td>TLS, SRTP, H.235, and AES 128-bit encryption</td>
           <td></td>
           <td></td>
-          <td>HIPAA</td>
-          <td>Privacy policy</td>
+          <td><a class="cell-link" href="https://www.vidyohealth.com/secure-virtual-care" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.vidyohealth.com/privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -464,7 +474,7 @@
           <td>Secure Socket Layer (SSL) technology</td>
           <td></td>
           <td></td>
-          <td>HIPAA</td>
+          <td><a class="cell-link" href="https://medisprout.com/v2md/" target="_blank">HIPAA</a></td>
           <td></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
@@ -482,8 +492,8 @@
           <td></td>
           <td></td>
           <td>Invitation</td>
-          <td><span class="cross">&#10008;</span> *</td>
-          <td>Cisco-wide Privacy Policy</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><a class="cell-link" href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html" target="_blank">Cisco-wide Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -501,7 +511,7 @@
           <td></td>
           <td>unique meeting IDs, PIN codes, encryption, lock meetings</td>
           <td>HIPAA</td>
-          <td>Privacy policy</td>
+          <td><a class="cell-link" href="https://www.yorktel.com/privacy-policy/" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -518,8 +528,8 @@
           <td>Secure Socket Layer (SSL)</td>
           <td></td>
           <td></td>
-          <td>HIPAA</td>
-          <td>Privacy policy</td>
+          <td><a class="cell-link" href="https://www.medweb.com/medweblegalcomplianceinformation" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.medweb.com/medweb-software-privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -536,12 +546,12 @@
           <td></td>
           <td>SSO<br>user acces control</td>
           <td></td>
-          <td>HITRUST CSF<br>HIPAA<br>AdvaMed Certified</td>
-          <td>Privacy Policy</td>
+          <td><a class="cell-link" href="https://intouchhealth.com/achieves-hitrust-csf-certification/?gdprorigin=true" target="_blank">HITRUST CSF<br>HIPAA<br>AdvaMed Certified</a></td>
+          <td><a class="cell-link" href="https://teladochealth.com/privacy-policy/" target="_blank">Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
-          <td><a class="app-name" href="https://www.globalmed.com/" title="Healthcare-based" target="_blank">GlobalMed</a><br>(eNcounter®)</td>
+          <td><a class="app-name" href="https://www.globalmed.com/solutions/software-solutions/encounter-software/" title="Healthcare-based" target="_blank">GlobalMed</a><br>(eNcounter®)</td>
           <td></td>
           <td></td>
           <td><span class="tick">&#10004;</span></td>
@@ -554,8 +564,9 @@
           <td>Secure Socket Layer (SSL)</td>
           <td></td>
           <td></td>
-          <td>HIPAA<br>FICSMA<br>HITRUST</td>
-          <td>Privacy Policy</td>
+          <td><a class="cell-link" href="https://www.globalmed.com/about/quality-certifications/" target="_blank">HIPAA, ISO,</a>
+              <a class="cell-link" href="https://www.globalmed.com/wp-content/uploads/2020/10/GlobalMed_TelemedicineFAQs_APR2020.pdf" target="_blank">FICSMA,<br>HITRUST</a></td>
+          <td><a class="cell-link" href="https://www.globalmed.com/legal/privacy-statement/" target="_blank">Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -572,8 +583,8 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>HIPAA<br>COPPA (Children Online Privacy Protection Act)</td>
-          <td>Privacy Policy</td>
+          <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">HIPAA<br>COPPA (Children Online Privacy Protection Act)</a></td>
+          <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
       </tbody>
