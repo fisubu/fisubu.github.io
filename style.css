@@ -66,13 +66,14 @@
     color: var(--yellow-google);
     text-decoration: underline;  
   }
+  /*table { border-collapse:separate; border-spacing: 0; table-layout:auto; width:100%; }*/
   table { border-collapse:collapse; table-layout:auto; width:100%; }
   /*He cambiado de fixed a auto para que la primera columna se hiciera más estrecha*/
   th { background:#F5F5F5; display:none; }
   td, th {
     height:53px
   }
-  td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+  td,th { border:1px solid #DDD; padding:8px; empty-cells:show; }
   td,th { border-left:3px solid #FFF;}
   td,th {
     text-align:left;
@@ -104,11 +105,12 @@
     background:#4285f4;
     color:#FFF;
   }
+ 
   .app-name { font-size:16px; font-weight:bold;color:#000; }
   .txt-l { font-size:28px; font-weight:bold; }
   .txt-top { position:relative; top:-9px; left:-2px; }
-  .tick { font-size:25px; color:#0F9058; }
-  .cross { font-size:25px; color:#DB4437; }
+  .tick { font-size:1.5vw; color:#0F9058; }
+  .cross { font-size:1.5vw; color:#DB4437; }
   .hide {
     border:0;
     background:none;
@@ -118,12 +120,49 @@
   /*The background of rows (TR) is drawn in front of the background of columns (COL)*/
   col:first-child {background: #4285f4}
 
-  col:nth-child(8){background: #f4b3008c}
-  col:nth-child(9) {background: #f4b3008c}
-  col:nth-child(10) {background: #f4b3008c}
+  /*middle columns fix highlight*/
+  col:nth-child(n+8):nth-child(-n+10){background: #f4b3008c}
 
+  /*even-odd fix highlight*/
   tr:nth-child(even) {background: rgba(186, 209, 245, 0.1)}
   tr:nth-child(odd) {background: rgb(245, 244, 244, 0.1)}
+
+  /*Highlight row when hover*/
+  tr:hover{
+    border-top:2px solid #F4B400;
+    border-bottom: 2px solid #F4B400;
+    font-weight: bold;
+  }
+  tr:hover td:nth-child(n+2):nth-child(-n+7){
+    border-top:2px solid #F4B400;
+    border-bottom: 2px solid #F4B400;
+    background: #0f905828;
+    font-weight: bold;
+  }
+  tr:hover td:nth-child(n+11):nth-child(-n+15){
+    border-top:2px solid #F4B400;
+    border-bottom: 2px solid #F4B400;
+    background: #db453728;
+    font-weight: bold;
+  }
+  tr:hover td:nth-child(16){
+    border-top:2px solid #F4B400;
+    border-bottom: 2px solid #F4B400;
+    background: #f4b30031;
+    font-weight: bold;
+  }
+  /*fixed header*/
+  th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10px;
+    z-index: 2;
+  }
+  /*td:active{
+    font-size:16px;
+    font-weight: bold;
+    background: #4286f43d;
+  }*/
 
   /*Clases para ventana modal de las anotaciones*/
   .modal-contenido{
