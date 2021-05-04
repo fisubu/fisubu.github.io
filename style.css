@@ -29,6 +29,24 @@
     color: white;
     font-size: 30px;
   }
+  .acronyms-box {
+    padding: 30px;
+    background: #1abc9c;
+    color: white;
+  }
+  .acronym {
+    color: white;
+  }
+  /*para los links de los acronimos*/
+  a.acronym:link, a.acronym:visited {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a.acronym:hover, a.acronym:active {
+    color: black;
+    text-decoration: underline;  
+    font-size: 16px;
+  }
 
   article {
     width:100%;
@@ -37,19 +55,11 @@
     height:1000px;
     position:relative;
   }
-  ul {
-    display:flex;
-    top:0px;
-    z-index:10;
-    padding-bottom:14px;
+
+  li{
+    line-height: 1.5;
   }
-  li {
-    list-style:none;
-    flex:1;
-  }
-  li:last-child {
-    border-right:1px solid #DDD;
-  }
+
   button {
     width:100%;
     border: 1px solid #DDD;
@@ -63,10 +73,10 @@
     color:#999
   }
 
-  li.active button {
+  /*li.active button {
     background:#F5F5F5;
     color:#000;
-  }
+  }*/
 
   /*para los links de las apps*/
   a.app-name:link, a.app-name:visited {
@@ -209,9 +219,9 @@
   }
   
   @media (min-width: 640px) {
-    ul {
+    /*ul {
       display:none;
-    }
+    }*/
     td,th {
       display:table-cell !important;
     }

@@ -13,7 +13,7 @@
   <article>
     <script src="script.js"></script>
     <!-- botones con js behaviour-->
-    <ul>
+    <!-- <ul>
       <li class="bg-blue">
         <button>APP</button>
       </li>
@@ -62,25 +62,25 @@
       <li class="bg-yellow">
         <button>EEUU Most Popular on healthcare environment</button>
       </li>
-    </ul>
+    </ul>-->
 
-    <p><a href="#notas">&#9432; More info</a></p>
+    <div><p><a href="#notas">&#9432; More info</a></p></div>
     <div id="notas" class="modal">
       <div class="modal-contenido">
         <a href="#">Go back to the table</a>
         <h2>Notes</h2>
 
-          <ol>
+          <ul>
             <li>The features of the apps, as well as their security and privacy details shown in the table, are conditional on the ease of access to this information (on April 12).</li>
             <br>
             <li>If an aplication has 2 versions of its product and one of them is healthcare-based, the healthcare-based was analyzed.</li>
             <br>
             <li>The features of each health-based platform were gathered for the most complete version (e.g. If there are three pricing plans for an application, the features of the most complete one was selected).</li>
             <br>
-            <li><span class="cross">&#10008;</span>* in [Security standards] column means that we have not found anything. Obviously, no app says explicitly they are not compliant with security standards. However, all of them should be GDPR compliant to be legal. HIPAA and SOC2 (and others) are aditional security standards.</li>
+            <li><span class="cross">&#10008;</span>* in any column means that we have not found anything. Obviously, no app says explicitly they are not compliant with security standards. However, all of them should be GDPR compliant to be legal. HIPAA and SOC2 (and others) are aditional security standards. Obvioulsy, they also do not state their lack of some feature. </li>
             <br>
             <li>We only state GDPR in the [Security standards] column when there was an official document from the application stating GDPR compliance.</li>
-          </ol>
+          </ul>
   
       </div>  
     </div>
@@ -453,15 +453,15 @@
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
           <td>Windows, MacOs, iOS, Android, Web</td>
           <td>TLS, SRTP, H.235, and AES 128-bit encryption</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://www.vidyohealth.com/secure-virtual-care" target="_blank">HIPAA</a></td>
           <td><a class="cell-link" href="https://www.vidyohealth.com/privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
@@ -478,10 +478,10 @@
           <td>$4 per virtual visit</td>
           <td>Apple iOS, Android</td>
           <td>Secure Socket Layer (SSL) technology</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://medisprout.com/v2md/" target="_blank">HIPAA</a></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
@@ -495,8 +495,8 @@
           <td><span class="cross">&#10008;</span></td>
           <td>On-device: Free<br>Cloud $60 per licence</td>
           <td>Windows, Mac, Android, iOS</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td>Invitation</td>
           <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html" target="_blank">Cisco-wide Privacy Policy</a></td>
@@ -504,8 +504,8 @@
         </tr>
         <tr>
           <td><a class="app-name" href="https://www.univago.com/" target="_blank">Univago</a></td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span></td>
           <td><span class="tick">&#10004;</span> <br>(up to 30)</td>
@@ -513,8 +513,8 @@
           <td><span class="cross">&#10008;</span></td>
           <td>Contact Sales</td>
           <td>Web</td>
-          <td>SSL/TLS, DTLS (media)TLS, SRTP/AESSSL/TLS, DTLS (media)TLS (SIP), SRTP/AES (media)</td>
-          <td></td>
+          <td>SSL/TLS, DTLS (media)TLS, SRTP/AESSSL/TLS, DTLS(media)TLS (SIP), SRTP/AES (media)</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td>unique meeting IDs, PIN codes, encryption, lock meetings</td>
           <td>HIPAA</td>
           <td><a class="cell-link" href="https://www.yorktel.com/privacy-policy/" target="_blank">Privacy policy</a></td>
@@ -523,53 +523,53 @@
         <tr>
           <td><a class="app-name" href="https://www.medweb.com/" title="Healthcare-based" target="_blank">Medweb</a></td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
           <td>Windows, Android, iOS</td>
           <td>Secure Socket Layer (SSL)</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://www.medweb.com/medweblegalcomplianceinformation" target="_blank">HIPAA</a></td>
           <td><a class="cell-link" href="https://www.medweb.com/medweb-software-privacy-policy" target="_blank">Privacy policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
           <td><a class="app-name" href="https://www.intouchhealth.com/" title="Healthcare-based" target="_blank">In Touch Health</a><br>(Platform -> Solo)</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
           <td>SaaS: web, desktop, mobile devices</td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td>SSO<br>user acces control</td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://intouchhealth.com/achieves-hitrust-csf-certification/?gdprorigin=true" target="_blank">HITRUST CSF<br>HIPAA<br>AdvaMed Certified</a></td>
           <td><a class="cell-link" href="https://teladochealth.com/privacy-policy/" target="_blank">Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
         <tr>
           <td><a class="app-name" href="https://www.globalmed.com/solutions/software-solutions/encounter-software/" title="Healthcare-based" target="_blank">GlobalMed</a><br>(eNcounter®)</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td>Secure Socket Layer (SSL)</td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="https://www.globalmed.com/about/quality-certifications/" target="_blank">HIPAA, ISO,</a>
               <a class="cell-link" href="https://www.globalmed.com/wp-content/uploads/2020/10/GlobalMed_TelemedicineFAQs_APR2020.pdf" target="_blank">FICSMA,<br>HITRUST</a></td>
           <td><a class="cell-link" href="https://www.globalmed.com/legal/privacy-statement/" target="_blank">Privacy Policy</a></td>
@@ -577,23 +577,64 @@
         </tr>
         <tr>
           <td><a class="app-name" href="http://www.sbrhealth.com/" title="Healthcare-based" target="_blank">SBR Health/Vidyo</a></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><span class="tick">&#10004;</span></td>
           <td>Contact Sales</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
+          <td><span class="cross">&#10008;</span>*</td>
           <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">HIPAA<br>COPPA (Children Online Privacy Protection Act)</a></td>
           <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">Privacy Policy</a></td>
           <td><span class="tick">&#10004;</span></td>
         </tr>
       </tbody>
     </table>
+
+    <div style="height:20px;"></div>
+    <div class="acronyms-box">
+      <h2 style="text-align:center;">Acronyms and Abbreviations</h2>
+      <ul type="circle">
+        <li><a class="acronym" href="https://www.hhs.gov/hipaa/index.html" target="_blank">HIPAA</a>:
+          Health Insurance Portability and Accountability Act of 1996</li>
+        <li><a class="acronym" href="https://www.aptible.com/hipaa/what-is-a-baa" target="_blank">BAA</a>:
+          Business associate agreement. BAAs are hybrid contractual and regulatory instruments, meaning they both satisfy HIPAA regulatory requirements and create liability between the parties.</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Personal_Health_Information_Protection_Act" target="_blank">PHIPA</a>:
+          Personal Health Information Protection Act</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act" target="_blank">PIPEDA</a>:
+          Personal Information Protection and Electronic Documents Act</li>
+        <li><a class="acronym" href="https://hitrustalliance.net/product-tool/hitrust-csf/" target="_blank">HITRUST</a>:
+          Prescriptive set of controls that meet the requirements of multiple regulations and standards</li>
+        <li><a class="acronym" href="https://www.asha.org/Practice/reimbursement/hipaa/HITECH-Act/" target="_blank">HITECH</a>: 
+          Health Information Technology for Economic and Clinical Health Act</li>
+        <li><a class="acronym" href="https://gdpr-info.eu/" target="_blank">GDPR</a>:
+          General Data Protection Regulation</li>
+
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Multi-factor_authentication" target="_blank">2FA</a>:
+          Multi-factor authentication or two-factor-authentication
+        </li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank">SSO</a>:
+          Single Sign-On
+        </li>
+
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/End-to-end_encryption" target="_blank">E2EE</a>:
+          End-to-end encryption</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">TLS - SSL</a>:
+          Transport Layer Security, and its now-deprecated predecessor, Secure Sockets Layer</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protoco#References" target="_blank">SRTP - RTP</a>:
+          Secure Real-time Transport Protocol</li>
+        <li><a class="acronym" href="https://tools.ietf.org/html/rfc5764" target="_blank">DTLS</a>:
+          Datagram Transport Layer Security</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" target="_blank">IETF</a>:
+          Internet Engineering Task Force</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Simple_Certificate_Enrollment_Protocol" target="_blank">SCEP</a>:
+          Simple Certificate Enrollment Protocol</li>
+      </ul>
+    </div> 
   </article>
 </html> 
