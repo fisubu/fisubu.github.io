@@ -212,6 +212,7 @@
     opacity:0;
     pointer-events:none;
     transition: all 1s;
+    z-index: 3;
   }
   #notas:target{
     opacity:1;
