@@ -143,6 +143,7 @@
   .txt-top { position:relative; top:-9px; left:-2px; }
   .tick { font-size:1.5vw; color:#0F9058; }
   .cross { font-size:1.5vw; color:#DB4437; }
+  .qmark {font-size:1.5vw; font-weight: bold; color:#7c7c7c;} 
   .hide {
     border:0;
     background:none;
