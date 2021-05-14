@@ -31,8 +31,9 @@
   }
   .header img {
     float: left;
-    width: 314px;
-    height: 146px;
+    width: 259px;
+    height: 121px;
+    margin-right: 25px;
   }
   .acronyms-box {
     padding: 30px;
