@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  <title>Summary of videocall applications</title>
+  </head>
+
+  <article>
+    <script src="script.js"></script>
+    <!-- botones con js behaviour-->
+    <!-- <ul>
+      <li class="bg-blue">
+        <button>APP</button>
+      </li>
+      <li class="bg-green">
+        <button>Chat</button>
+      </li>
+      <li class="bg-green">
+        <button>Calls</button>
+      </li>
+      <li class="bg-green">
+        <button>Video Calls<br>(one-to-one)</button>
+      </li>
+      <li class="bg-green">
+        <button>File Sharing</button>
+      </li>
+      <li class="bg-green">
+        <button>Group<br>video-meetings</button>
+      </li>
+      <li class="bg-green">
+        <button>Screen share</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Healthcare based</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Pricing</button>
+      </li>
+      <li class="bg-yellow">
+        <button>Supported OS and platforms</button>
+      </li>
+      <li class="bg-red">
+        <button>Communications<br>protection (ENCRYPTION)</button>
+      </li>
+      <li class="bg-red">
+        <button>Extra security<br>layer</button>
+      </li>
+      <li class="bg-red">
+        <button>Security measures<br>in group meetings<br>(Admin-Pass-Invitation)</button>
+      </li>
+      <li class="bg-red">
+        <button>Security Standards Compliance</button>
+      </li>
+      <li class="bg-red">
+        <button>Privacy Policy</button>
+      </li>
+    </ul>-->
+
+    <table>
+      <col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="6" class="bg-green">General features</th>
+          <th colspan="3" class="bg-yellow">Specific features</th>
+          <th colspan="5" class="bg-red">Security features</th>
+        </tr>
+        <tr style="text-align: center;">
+          <th class="bg-blue">Application</th>
+          <th class="bg-green"><div class="tooltip">Chat<span class="tooltiptext">Whether has chat functionality</span></div></th>
+          <th class="bg-green"><div class="tooltip">Calls<span class="tooltiptext">Whether is possible to call other user</span></div></th>
+          <th class="bg-green"><div class="tooltip">Video Calls<br><span class="tooltiptext">Whether has videocall (one to one) functionality</span></div></th>
+          <th class="bg-green"><div class="tooltip">File Sharing<span class="tooltiptext">Whether allows to share files</span></div></th>
+          <th class="bg-green"><div class="tooltip">Group<br>video-meetings<br><span class="tooltiptext">Whether allows group videocalls</span></div></th>
+          <th class="bg-green"><div class="tooltip">Screen share<span class="tooltiptext">Whether allows to share the screen</span></div></th>
+          <th class="bg-yellow"><div class="tooltip">Healthcare based<span class="tooltiptext">Whether is designed for healthcare</span></div></th>
+          <th class="bg-yellow">Pricing</th>
+          <th class="bg-yellow"><div class="tooltip">Supported OS and platforms<span class="tooltiptext">Supported operative systems and platforms</span></div></th>
+          <th class="bg-red"><div class="tooltip">Communications<br>protection<span class="tooltiptext">Encryption standard used for protecting communications</span></div></th>
+          <th class="bg-red">Extra security<br>layer</th>
+          <th class="bg-red"><div class="tooltip">Security in group meetings<span class="tooltiptext">Extra security measures in group meetings: e.g. Admin-Pass-Invitation</span></div></th>
+          <th class="bg-red">Security Standards Compliance</th>
+          <th class="bg-red">Privacy Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="100%" class="sep">Specifically healthcare-based applications</td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.coviu.com/en-us/" title="Healthcare-based" target="_blank">Coviu</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(up to 6 users in clinic licence)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>3 plans: starter, professional and clinic ($15, $30, $42), discount per year billing</td>
+          <td>Web</td>
+          <td>
+            <a class="cell-link" href="https://help.coviu.com/knowledge/privacy-security-of-data-1" target="_blank">E2EE,
+              <br>TLS 1.2, ECDHE_RSA with P-256 and AES_128_GCM.
+              <br>Coviu call, data, video and audio: DTLS-SRTP</a></td>
+          <td><a class="cell-link" href="https://help.coviu.com/knowledge/kb-search-results?term=SSO" target="_blank">Azure SSO,<br>ADFS SSO,<br></a>
+            <a class="cell-link" href="https://help.coviu.com/knowledge/kb-search-results?term=API+key" target="_blank">Firewall and proxy settings,<br>API key</a>
+          </td>
+          <td>Invitation,<br>Waiting Area,<br>Meeting dministrator managment,<br>Security groups (SAML)</td>
+          <td><a class="cell-link" href="https://help.coviu.com/knowledge/hipaa-compliance" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.coviu.com/en-au/privacy" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://doxy.me/features" title="Healthcare-based" target="_blank">Doxy.me</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>From Free to $42/month per provider</td>
+          <td>Web  browser based</td>
+          <td><a class="cell-link" href="https://help.doxy.me/en/articles/95911-is-doxy-me-secure" target="_blank">E2EE, TLS, AES 128 with SHA256</a></td>
+          <td><a class="cell-link" href="https://doxy.me/en/eu-policy/" target="_blank">SSO</a></td>
+          <td>Room passcode, access control<br>Invitation to meeting through email</td>
+          <td><a class="cell-link" href="https://help.doxy.me/en/collections/1402712-legal-privacy-and-security" target="_blank">HIPAA - BAA,<br>PHIPA/PIPEDA,<br>HITECH,<br>GDPR</a></td>
+          <td><a class="cell-link" href="https://doxy.me/en/privacy-policy/" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.theraplatform.com/" title="Healthcare-based" target="_blank">Thera platform</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(from Pro edition onwards)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>3 plans: basic, pro and pro plus ($29, $39, $59), discount per year billing</td>
+          <td>Web</td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/features/security" target="_blank">Video encryption. <br>Website encryption 2048-bit SSL 256-bit.<br>Data transfer encryption. <br>Encrypted database backups. <br>Server encrypted AES-256 algorithm</a></td>
+          <td>SS0<br>(from Pro edition onwards)</td>
+          <td>Waiting room</td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/features/hipaa-compliant-video-conferencing" target="_blank">HIPAA - BAA</a></td>
+          <td><a class="cell-link" href="https://www.theraplatform.com/about/privacy" target="_blank">Privacy statement</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="http://www.polycom.com/collaboration-solutions/solutions-by-industry/healthcare.html" title="Healthcare-based" target="_blank">Poly</a><br>(ZOOM based app)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 100 users and 100 on paid version)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>HWaaS</td>
+          <td>Windows, Mac, Android, iOS</td>
+          <td><a class="cell-link" href="https://www.poly.com/content/dam/www/products/video/packaged/telehealt-station/doc/926143_Poly_Telehealth_Station_Data_Sheet_18DEC20_HR.pdf" target="_blank">AES-256 encryption<br>Simple Certificate Enrollment Protocol<br>(SCEP)</a></td>
+          <td>Remote logging with support for TLS and local account. <br>Also login port lockout</td>
+          <td>Authenticated access to admin menus, web interface and APIs and security profiles</td>
+          <td><a class="cell-link" href="https://www.poly.com/us/en/legal/privacy/privacy-policy" target="_blank">GDPR,<br>EEA,</a>
+            <a class="cell-link" href="https://support.polycom.com/content/dam/polycom-support/products/uc-infrastructure-support/security-firewall-traversal/user/en/hipaa-security-document.pdf" target="_blank">HIPPA</a>
+          </td>
+          <td><a class="cell-link" href="https://support.polycom.com/content/dam/polycom-support/global/agreements/polycom-end-user-license-agmt-all-products.pdf" target="_blank">EULA,</a> 
+            <a class="cell-link" href="https://www.poly.com/us/en/legal/privacy/privacy-policy" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://meetrix.io/solutions/telemedicine/" title="Healthcare-based" target="_blank">Meetrix.io</a> <br>(Jitsi based)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span><br>(up to 500 users)</td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Web</td>
+          <td>E2EE<br>DTLS-SRTP</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Password,<br>Admin control (every user is a moderator)</td>
+          <td><a class="cell-link" href="https://meetrix.io/solutions/telemedicine/" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://meetrix.io/privacy-policy" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.vidyo.com/video-conferencing-solutions/industry/telehealth" title="Healthcare-based" target="_blank">Vidyo Health</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Windows, MacOs, iOS, Android, Web</td>
+          <td>TLS, SRTP, H.235, and AES 128-bit encryption</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://www.vidyohealth.com/secure-virtual-care" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.vidyohealth.com/privacy-policy" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://medisprout.com/" title="Healthcare-based" target="_blank">V2MD by Medisprout</a></td>
+          <td><span class="tick">&#10004;</span><br>(visit reminders)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>$4 per virtual visit</td>
+          <td>Apple iOS, Android</td>
+          <td>Secure Socket Layer (SSL) technology</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://medisprout.com/v2md/" target="_blank">HIPAA</a></td>
+          <td><span class="qmark">&#63;</span></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.cisco.com/c/en/us/products/unified-communications/jabber/index.html" target="_blank">Cisco Jabber</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>On-device: Free<br>Cloud $60 per licence</td>
+          <td>Windows, Mac, Android, iOS</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td>Invitation</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html" target="_blank">Cisco-wide Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.univago.com/" target="_blank">Univago</a></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span> <br>(up to 30)</td>
+          <td><span class="tick">&#10004;</span> <br>(from Professional edition onwards)</td>
+          <td><span class="cross">&#10008;</span></td>
+          <td>Contact Sales</td>
+          <td>Web</td>
+          <td>SSL/TLS, DTLS (media)TLS, SRTP/AESSSL/TLS, DTLS(media)TLS (SIP), SRTP/AES (media)</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td>unique meeting IDs, PIN codes, encryption, lock meetings</td>
+          <td>HIPAA</td>
+          <td><a class="cell-link" href="https://www.yorktel.com/privacy-policy/" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.medweb.com/" title="Healthcare-based" target="_blank">Medweb</a></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>Windows, Android, iOS</td>
+          <td>Secure Socket Layer (SSL)</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://www.medweb.com/medweblegalcomplianceinformation" target="_blank">HIPAA</a></td>
+          <td><a class="cell-link" href="https://www.medweb.com/medweb-software-privacy-policy" target="_blank">Privacy policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.intouchhealth.com/" title="Healthcare-based" target="_blank">In Touch Health</a><br>(Platform -> Solo)</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td>SaaS: web, desktop, mobile devices</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td>SSO<br>user acces control</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://intouchhealth.com/achieves-hitrust-csf-certification/?gdprorigin=true" target="_blank">HITRUST CSF<br>HIPAA<br>AdvaMed Certified</a></td>
+          <td><a class="cell-link" href="https://teladochealth.com/privacy-policy/" target="_blank">Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="https://www.globalmed.com/solutions/software-solutions/encounter-software/" title="Healthcare-based" target="_blank">GlobalMed</a><br>(eNcounter®)</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td>Secure Socket Layer (SSL)</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="https://www.globalmed.com/about/quality-certifications/" target="_blank">HIPAA, ISO,</a>
+              <a class="cell-link" href="https://www.globalmed.com/wp-content/uploads/2020/10/GlobalMed_TelemedicineFAQs_APR2020.pdf" target="_blank">FICSMA,<br>HITRUST</a></td>
+          <td><a class="cell-link" href="https://www.globalmed.com/legal/privacy-statement/" target="_blank">Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><a class="app-name" href="http://www.sbrhealth.com/" title="Healthcare-based" target="_blank">SBR Health/Vidyo</a></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td>Contact Sales</td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><span class="qmark">&#63;</span></td>
+          <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">HIPAA<br>COPPA (Children Online Privacy Protection Act)</a></td>
+          <td><a class="cell-link" href="http://www.sbrhealth.com/privacy" target="_blank">Privacy Policy</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="height:20px;"></div>
+    <div class="acronyms-box">
+      <h3>Designed and created by Universidad de Burgos and Hospital Universitario de Burgos. Please cite this work (review process in progress).</h3>
+      <h2 style="text-align:center;">Acronyms and Abbreviations</h2>
+      <ul type="circle">
+        <li><a class="acronym" href="https://www.hhs.gov/hipaa/index.html" target="_blank">HIPAA</a>:
+          Health Insurance Portability and Accountability Act of 1996</li>
+        <li><a class="acronym" href="https://www.aptible.com/hipaa/what-is-a-baa" target="_blank">BAA</a>:
+          Business associate agreement. BAAs are hybrid contractual and regulatory instruments, meaning they both satisfy HIPAA regulatory requirements and create liability between the parties.</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Personal_Health_Information_Protection_Act" target="_blank">PHIPA</a>:
+          Personal Health Information Protection Act</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act" target="_blank">PIPEDA</a>:
+          Personal Information Protection and Electronic Documents Act</li>
+        <li><a class="acronym" href="https://hitrustalliance.net/product-tool/hitrust-csf/" target="_blank">HITRUST</a>:
+          Prescriptive set of controls that meet the requirements of multiple regulations and standards</li>
+        <li><a class="acronym" href="https://www.asha.org/Practice/reimbursement/hipaa/HITECH-Act/" target="_blank">HITECH</a>: 
+          Health Information Technology for Economic and Clinical Health Act</li>
+        <li><a class="acronym" href="https://gdpr-info.eu/" target="_blank">GDPR</a>:
+          General Data Protection Regulation</li>
+
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Multi-factor_authentication" target="_blank">2FA</a>:
+          Multi-factor authentication or two-factor-authentication
+        </li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank">SSO</a>:
+          Single Sign-On
+        </li>
+
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/End-to-end_encryption" target="_blank">E2EE</a>:
+          End-to-end encryption</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">TLS - SSL</a>:
+          Transport Layer Security, and its now-deprecated predecessor, Secure Sockets Layer</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protoco#References" target="_blank">SRTP - RTP</a>:
+          Secure Real-time Transport Protocol</li>
+        <li><a class="acronym" href="https://tools.ietf.org/html/rfc5764" target="_blank">DTLS</a>:
+          Datagram Transport Layer Security</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" target="_blank">IETF</a>:
+          Internet Engineering Task Force</li>
+        <li><a class="acronym" href="https://en.wikipedia.org/wiki/Simple_Certificate_Enrollment_Protocol" target="_blank">SCEP</a>:
+          Simple Certificate Enrollment Protocol</li>
+      </ul>
+    </div> 
+  </article>
+</html> 
